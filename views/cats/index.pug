@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+  body
+    .container
+      h1 Cats
+      hr
+      a(href="/cats/add-cat") Add cat
+      hr
+      ul
+        each cat, index in cats
+          li
+            a(href="/cats/" + index)
+              =cat

@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+  body
+    .container
+      h1 Add Cat
+      hr
+      a(href="/cats") Back to Cats
+      hr
+      form(action="/cats/add-cat", method="post")
+        .form-group
+          label(for="new-cat")
+          input#new-cat.form-control(name="cat", placeholder="Enter new cat")
+        button.btn.btn-primary(type="submit") Add new cat
