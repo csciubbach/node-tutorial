@@ -25,7 +25,7 @@ app.get("/cats", function (_request, response) {
  */
 app.get("/cats/:catNumber", function (request, response) {
 
-    const cat = cats[request.params.catNumber];
+    const cat = catRepository[request.params.catNumber];
 
     return response.send(cat);
 });
