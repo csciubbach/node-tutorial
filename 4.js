@@ -1,5 +1,8 @@
 const express = require("express");
-const catRepository = require("./data/catRepository"); // Moved cats into a module
+/**
+ * Moved cats into a module, check the data folder for the catRepository.js file.
+ */
+const catRepository = require("./data/catRepository");
 
 const app = express();
 
