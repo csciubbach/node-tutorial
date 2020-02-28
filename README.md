@@ -4,7 +4,7 @@ Tutorial for node with express
 
 ## Setup
 
-Install node from <https://github.com/nvm-sh/nvm>
+Install nvm (Node Version Manager) from <https://github.com/nvm-sh/nvm>
 
 Once nvm is installed verify it is installed with `nvm --version`.
 
