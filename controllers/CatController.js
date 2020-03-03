@@ -3,12 +3,9 @@ const catRepository = require("../data/catRepository");
 class CatController {
 
     static getCats(_request, response) {
-        return response.render(
-            "cats/index",
-            {
-                cats: catRepository
-            }
-        );
+        return response.render("cats/index", {
+            cats: catRepository
+        });
     }
 
     static getCat(request, response) {

@@ -54,9 +54,9 @@ app.get("/", function (_request, response) {
     });
 });
 
-const goodCatRouter = require("./routers/CatRouter");
+const catRouter = require("./routers/CatRouter");
 
-app.use("/cats", goodCatRouter.initRoutes());
+app.use("/cats", catRouter.initRoutes());
 
 app.listen(3001, function () {
     console.log("I'm listening!");
