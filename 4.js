@@ -1,3 +1,11 @@
+/**
+ * Associated files
+ * .
+ * ├── 4.js
+ * └── data
+ *     └── catRepository.js
+ */
+
 const express = require("express");
 /**
  * Moved cats into a module, check the data folder for the catRepository.js file.

@@ -1,5 +1,5 @@
 const express = require("express");
-const FatCatController = require("../controllers/FatCatController")
+const CatController = require("../controllers/CatController")
 
 class CatRouter {
 
@@ -7,10 +7,10 @@ class CatRouter {
 
         const catRouter = express.Router();
 
-        catRouter.get("/", FatCatController.getCats);
-        catRouter.get("/add-cat", FatCatController.getAddCat);
-        catRouter.post("/add-cat", FatCatController.postAddCat);
-        catRouter.get("/:catNumber", FatCatController.getCat); // This has to be last!
+        catRouter.get("/", CatController.getCats);
+        catRouter.get("/add-cat", CatController.getAddCat);
+        catRouter.post("/add-cat", CatController.postAddCat);
+        catRouter.get("/:catNumber", CatController.getCat); // This has to be last!
 
         return catRouter;
     }

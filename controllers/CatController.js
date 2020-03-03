@@ -1,16 +1,14 @@
 const catRepository = require("../data/catRepository");
 
-/**
- * Now we have a separation of concerns. We can test this on its own.
- * 
- * It is just a collection of functions which take a request and do
- * something with a response.
- */
-
 class CatController {
 
     static getCats(_request, response) {
-        return response.send(catRepository);
+        return response.render(
+            "cats/index",
+            {
+                cats: catRepository
+            }
+        );
     }
 
     static getCat(request, response) {
@@ -18,6 +16,19 @@ class CatController {
         const cat = catRepository[request.params.catNumber];
 
         return response.send(cat);
+    }
+
+    static getAddCat(_request, response) {
+        return response.render("cats/addCat", {
+            title: "Add new cat"
+        });
+    }
+
+    static postAddCat(request, response) {
+
+        catRepository.push(request.body.cat);
+
+        return response.redirect("/cats");
     }
 }
 

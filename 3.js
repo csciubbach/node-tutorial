@@ -1,3 +1,9 @@
+/**
+ * Associated files
+ * .
+ * └── 3.js
+ */
+
 const express = require("express");
 
 const app = express();

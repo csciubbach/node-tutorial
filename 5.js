@@ -1,3 +1,11 @@
+/**
+ * Associated files
+ * .
+ * ├── 5.js
+ * └── data
+ *     └── catRepository.js
+ */
+
 const express = require("express");
 const catRepository = require("./data/catRepository");
 

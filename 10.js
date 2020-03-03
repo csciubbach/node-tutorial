@@ -1,3 +1,20 @@
+/**
+ * Associated files
+ * .
+ * ├── 10.js
+ * ├── controllers
+ * │   └── CatController.js
+ * ├── data
+ * │   └── catRepository.js
+ * ├── routers
+ * │   └── CatRouter.js
+ * └── views
+ *     ├── cats
+ *     │   ├── addCat.pug
+ *     │   └── index.pug
+ *     └── index.pug
+ */
+
 const express = require("express");
 /**
  * Psyche! Remember when I referred to a body parser middleware to parse post body?

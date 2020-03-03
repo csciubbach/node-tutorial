@@ -1,3 +1,13 @@
+/**
+ * Associated files
+ * .
+ * ├── 6.js
+ * ├── data
+ * │   └── catRepository.js
+ * └── routers
+ *     └── BadCatRouter.js
+ */
+
 const express = require("express");
 
 const app = express();

@@ -1,5 +1,5 @@
 const express = require("express");
-const CatController = require("../controllers/CatController")
+const ApiCatController = require("../controllers/ApiCatController")
 
 class GoodCatRouter {
 
@@ -7,8 +7,8 @@ class GoodCatRouter {
 
         const catRouter = express.Router();
 
-        catRouter.get("/", CatController.getCats);
-        catRouter.get("/:catNumber", CatController.getCat);
+        catRouter.get("/", ApiCatController.getCats);
+        catRouter.get("/:catNumber", ApiCatController.getCat);
 
         return catRouter;
     }

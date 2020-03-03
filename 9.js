@@ -1,3 +1,20 @@
+/**
+ * Associated files
+ * .
+ * ├── 9.js
+ * ├── controllers
+ * │   └── CatController.js
+ * ├── data
+ * │   └── catRepository.js
+ * ├── routers
+ * │   └── CatRouter.js
+ * └── views
+ *     ├── cats
+ *     │   ├── addCat.pug
+ *     │   └── index.pug
+ *     └── index.pug
+ */
+
 const express = require("express");
 
 const app = express();
@@ -32,9 +49,10 @@ const goodCatRouter = require("./routers/CatRouter");
 app.use("/cats", goodCatRouter.initRoutes());
 
 /**
- * Check out what we have done with views and the new FatCatController
+ * Check out what we have done with views and the new CatController which
+ * contains views.
  * 
- * Then run this and try to add a new cat
+ * Then run this and try to add a new cat.
  */
 
 app.listen(3001, function () {
