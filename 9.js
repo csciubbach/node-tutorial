@@ -44,9 +44,9 @@ app.get("/", function (_request, response) {
 });
 
 // Changed router to refer to our new controller which renders views!
-const catRouter = require("./routers/CatRouter");
+const CatRouter = require("./routers/CatRouter");
 
-app.use("/cats", catRouter.initRoutes());
+app.use("/cats", CatRouter.initRoutes());
 
 /**
  * Check out what we have done with views and the new CatController which

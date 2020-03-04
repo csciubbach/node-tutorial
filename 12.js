@@ -29,11 +29,11 @@ app.set("view engine", "pug");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const homeRouter = require("./routers/HomeRouter");
-const catRouter = require("./routers/CatRouter");
+const HomeRouter = require("./routers/HomeRouter");
+const CatRouter = require("./routers/CatRouter");
 
-app.use("/", homeRouter.initRoutes());
-app.use("/cats", catRouter.initRoutes());
+app.use("/", HomeRouter.initRoutes());
+app.use("/cats", CatRouter.initRoutes());
 
 /**
  * We're going to have amazing fun with asynchronous code ;)

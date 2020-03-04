@@ -54,9 +54,9 @@ app.get("/", (_request, response) => response.render("index", {
     message: "Hello, world!"
 }));
 
-const catRouter = require("./routers/CatRouter");
+const CatRouter = require("./routers/CatRouter");
 
-app.use("/cats", catRouter.initRoutes());
+app.use("/cats", CatRouter.initRoutes());
 
 app.listen(3001, function () {
     console.log("I'm listening!");

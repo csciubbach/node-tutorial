@@ -29,11 +29,11 @@ app.set("view engine", "pug");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const homeRouter = require("./routers/HomeRouter");
-const catRouter = require("./routers/AsyncCatRouter");
+const HomeRouter = require("./routers/HomeRouter");
+const AsyncCatRouter = require("./routers/AsyncCatRouter");
 
-app.use("/", homeRouter.initRoutes());
-app.use("/cats", catRouter.initRoutes());
+app.use("/", HomeRouter.initRoutes());
+app.use("/cats", AsyncCatRouter.initRoutes());
 
 app.listen(3001, function () {
     console.log("I'm listening!");
