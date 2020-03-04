@@ -40,6 +40,10 @@ app.use("/cats", catRouter.initRoutes());
 
 /**
  * We're going to have amazing fun with asynchronous code ;)
+ * 
+ * The purpose of the next few lessons is to show how to asynchronously access data.
+ * 
+ * You could swap out the catRepository in the CatController with any one of these as an exercise.
  */
 const CatServiceCallbacks = require("./services/CatServiceCallbacks");
 const catService = new CatServiceCallbacks();
