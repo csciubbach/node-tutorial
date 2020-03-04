@@ -1,4 +1,4 @@
-const CallbackLibrary = require("./CallbackLibrary");
+const CallbackLibrary = require("../data/CallbackLibrary");
 const { promisify } = require("util");
 
 class CatServiceAsyncCallbacks {

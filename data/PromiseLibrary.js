@@ -1,4 +1,4 @@
-const catRepository = require("../data/catRepository");
+const catRepository = require("./catRepository");
 
 /**
  * So a Promise is another way of doing asynchronous code.

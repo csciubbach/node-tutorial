@@ -6,12 +6,12 @@
  * │   ├── HomeController.js
  * │   └── CatController.js
  * ├── data
+ * │   ├── CallbackLibrary.js
  * │   └── catRepository.js
  * ├── routers
  * │   ├── HomeRouter.js
  * │   └── CatRouter.js
  * ├── services
- * │   ├── CallbackLibrary.js
  * │   └── CatServiceCallbacks.js
  * └── views
  *     ├── cats

@@ -1,4 +1,4 @@
-const PromiseLibrary = require("./PromiseLibrary");
+const PromiseLibrary = require("../data/PromiseLibrary");
 
 class CatServiceAsyncPromises {
 

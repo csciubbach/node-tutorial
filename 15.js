@@ -6,12 +6,12 @@
  * │   ├── HomeController.js
  * │   └── AsyncCatController.js
  * ├── data
+ * │   ├── PromiseLibrary.js
  * │   └── catRepository.js
  * ├── routers
  * │   ├── HomeRouter.js
  * │   └── AsyncCatRouter.js
  * ├── services
- * │   ├── PromiseLibrary.js
  * │   └── CatServiceAsyncPromises.js
  * └── views
  *     ├── cats
