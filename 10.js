@@ -17,7 +17,7 @@
 
 const express = require("express");
 /**
- * Psyche! Remember when I referred to a body parser middleware to parse post body?
+ * Sorry. Remember when I referred to a body parser middleware to parse post body?
  * 
  * I've just done `npm install --save body-parser` and adding it now.
  */

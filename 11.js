@@ -70,6 +70,8 @@ app.use("/async-cat", (_request, response) => {
              * Do something with the error. Recover or fail gracefully.
              * 
              * This is your "catch".
+             * 
+             * There won't be an error because we didn't pass one in for this.
              */
             console.error(error);
         }

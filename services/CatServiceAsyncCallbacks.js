@@ -5,8 +5,8 @@ class CatServiceAsyncCallbacks {
 
     constructor() {
         this.catRepo = new CallbackLibrary();
-        this.getCats = promisify(catRepo.getCats);
-        this.getCat = promisify(catRepo.getCat);
+        this.getCats = promisify(this.catRepo.getCats);
+        this.getCat = promisify(this.catRepo.getCat);
     }
 
     async getCats() {
