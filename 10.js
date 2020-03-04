@@ -46,13 +46,13 @@ const myMiddlewareFunction = function (request, response, next) {
  */
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get("/", function (_request, response) {
-
-    return response.render("index", {
-        title: "Wow",
-        message: "Hello, world!"
-    });
-});
+/**
+ * This is equivalent to the previous example for app.get("/")
+ */
+app.get("/", (_request, response) => response.render("index", {
+    title: "Wow",
+    message: "Hello, world!"
+}));
 
 const catRouter = require("./routers/CatRouter");
 

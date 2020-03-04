@@ -1,43 +1,16 @@
-const catRepository = require("../data/catRepository");
+const CallbackLibrary = require("./CallbackLibrary");
 
-class CatService {
+class CatServiceCallbacks {
 
-    _getCats(done) {
-
-        // Simulate asynchronous call
-        process.nextTick(function () {
-            done(undefined, catRepository);
-        });
-    }
-
-    _getCat(id, done) {
-
-        // Simulate asynchronous call
-        process.nextTick(function () {
-
-            const cat = catRepository[id];
-
-            let error;
-
-            if (cat === undefined) {
-                error = "Cat does not exist!";
-            }
-
-            return done(error, catRepository[id]);
-        });
-    }
+    catRepo = new CallbackLibrary();
 
     getCats(done) {
-        return this._getCats(function (error, cats) {
-            return done(error, cats);
-        });
+        return this.catRepo.getCats(done);
     }
 
     getCat(id, done) {
-        return this._getCat(id, function (error, cat) {
-            return done(error, cat);
-        });
+        return this.catRepo.getCat(id, done);
     }
 }
 
-module.exports = CatService;
+module.exports = CatServiceCallbacks;
