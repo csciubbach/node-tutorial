@@ -3,7 +3,7 @@ const catRepository = require("../data/catRepository");
 
 class BadCatRouter {
 
-    static initRoutes () {
+    static create() {
 
         const catRouter = express.Router();
 

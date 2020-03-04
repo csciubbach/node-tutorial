@@ -18,7 +18,7 @@ app.get("/", function (_request, response) {
 
 const BetterCatRouter = require("./routers/BetterCatRouter");
 
-app.use("/cats", BetterCatRouter.initRoutes());
+app.use("/cats", BetterCatRouter.create());
 
 app.listen(3001, function () {
     console.log("I'm listening!");

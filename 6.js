@@ -22,7 +22,7 @@ app.get("/", function (_request, response) {
  */
 const BadCatRouter = require("./routers/BadCatRouter");
 
-app.use("/cats", BadCatRouter.initRoutes());
+app.use("/cats", BadCatRouter.create());
 
 app.listen(3001, function () {
     console.log("I'm listening!");

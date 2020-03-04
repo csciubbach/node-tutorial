@@ -3,7 +3,7 @@ const HomeController = require("../controllers/HomeController")
 
 class HomeRouter {
 
-    static initRoutes () {
+    static create() {
 
         const homeRouter = express.Router();
 

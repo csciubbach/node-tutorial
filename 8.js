@@ -20,7 +20,7 @@ app.get("/", function (_request, response) {
 
 const GoodCatRouter = require("./routers/GoodCatRouter");
 
-app.use("/cats", GoodCatRouter.initRoutes());
+app.use("/cats", GoodCatRouter.create());
 
 app.listen(3001, function () {
     console.log("I'm listening!");

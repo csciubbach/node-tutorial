@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const HomeRouter = require("./routers/HomeRouter");
 const CatRouter = require("./routers/CatRouter");
 
-app.use("/", HomeRouter.initRoutes());
-app.use("/cats", CatRouter.initRoutes());
+app.use("/", HomeRouter.create());
+app.use("/cats", CatRouter.create());
 
 /**
  * Here we are actually using async still but I am showing you how to convert callback functions

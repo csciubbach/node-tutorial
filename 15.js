@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const HomeRouter = require("./routers/HomeRouter");
 const AsyncCatRouter = require("./routers/AsyncCatRouter");
 
-app.use("/", HomeRouter.initRoutes());
-app.use("/cats", AsyncCatRouter.initRoutes());
+app.use("/", HomeRouter.create());
+app.use("/cats", AsyncCatRouter.create());
 
 app.listen(3001, function () {
     console.log("I'm listening!");

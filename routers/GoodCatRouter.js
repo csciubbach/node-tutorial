@@ -3,7 +3,7 @@ const ApiCatController = require("../controllers/ApiCatController")
 
 class GoodCatRouter {
 
-    static initRoutes () {
+    static create() {
 
         const catRouter = express.Router();
 

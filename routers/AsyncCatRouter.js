@@ -3,7 +3,7 @@ const AsyncCatController = require("../controllers/AsyncCatController")
 
 class AsyncCatRouter {
 
-    static initRoutes () {
+    static create() {
 
         const catRouter = express.Router();
 
