@@ -4,15 +4,15 @@
  * ├── 10.js
  * ├── controllers
  * │   ├── HomeController.js
- * │   └── CatController.js
+ * │   └── AsyncCatController.js
  * ├── data
  * │   └── catRepository.js
  * ├── routers
  * │   ├── HomeRouter.js
- * │   └── CatRouter.js
+ * │   └── AsyncCatRouter.js
  * ├── services
- * │   ├── CallbackLibrary.js
- * │   └── CatServiceAsyncCallbacks.js
+ * │   ├── PromiseLibrary.js
+ * │   └── CatServiceAsyncPromises.js
  * └── views
  *     ├── cats
  *     │   ├── addCat.pug
